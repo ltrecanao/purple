@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="PurpleMD — Editor Markdown open source. Proyectos anidados, preview en vivo, PDF/ZIP, MCP Server. MIT License.">
+  <meta name="theme-color" content="#845d9c">
+  <title>PurpleMD: editor Markdown open source con MCP</title>
+  <meta property="og:title" content="PurpleMD: editor Markdown open source con MCP">
+  <meta property="og:description" content="Editor Markdown open source con preview en vivo, MCP Server nativo, proyectos anidados. Sin telemetría. Sin lock-in.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ltrecanao.github.io/purple/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PurpleMD: editor Markdown open source con MCP">
+  <meta name="twitter:description" content="Editor Markdown open source con preview en vivo, MCP Server nativo, proyectos anidados. Sin telemetría. Sin lock-in.">
+  <link rel="icon" type="image/svg+xml" href="static/assets/purple.svg">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner container">
+      <a href="/" class="logo" aria-label="Purple - Inicio">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="static/assets/wordmark-oscuro.svg">
+          <img src="static/assets/wordmark.svg" alt="Purple" width="320" height="80">
+        </picture>
+      </a>
+      <nav class="topbar-nav" aria-label="Navegación principal">
+        <a href="#valores" class="nav-link nav-link-desktop">Principios</a>
+        <a href="#features" class="nav-link nav-link-desktop">Características</a>
+        <a href="https://github.com/ltrecaneo/PurpleMD" class="nav-link nav-link-desktop" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <!-- Mobile Menu Panel -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación" hidden>
+      <div class="mobile-menu-inner">
+        <nav class="mobile-nav" aria-label="Navegación móvil">
+          <a href="#valores" class="mobile-nav-link">Principios</a>
+          <a href="#features" class="mobile-nav-link">Características</a>
+          <a href="https://github.com/ltrecaneo/PurpleMD" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title">Markdown, a tu manera. <strong>Sin ataduras.</strong></h1>
+          <p class="hero-lead">PurpleMD es un editor Markdown de código abierto con preview en vivo, MCP Server nativo y soporte para proyectos anidados. Sin telemetría. Sin lock-in. Con la libertad de trabajar como quieras.</p>
+          <p class="hero-lead-secondary">Tus notas son tuyas: el servidor no las guarda. Viven en tu Drive (appDataFolder) o en tu navegador (localStorage). Sin telemetría. Sin lock-in. Con la libertad de trabajar como quieras.</p>
+          <div class="hero-ctas">
+            <a href="https://md.purple.com.ar" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Probar PurpleMD gratis</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="editor-preview">
+            <div class="preview-header">
+              <div class="preview-dots"><span></span><span></span><span></span></div>
+              <span class="preview-title">Editor y previsualización</span>
+            </div>
+            <div class="preview-panels">
+              <div class="preview-split">
+                <div class="preview-editor">
+                  <div class="editor-line"><span class="com"># Bienvenido a PurpleMD</span></div>
+                  <div class="editor-line"><span class="com">## Editor + Preview en vivo</span></div>
+                  <div class="editor-line"></div>
+                  <div class="editor-line">Escribí <span class="kw">Markdown</span> acá,</div>
+                  <div class="editor-line">ves el resultado.</div>
+                  <div class="editor-line"></div>
+                  <div class="editor-line"><span class="com">### Características</span></div>
+                  <div class="editor-line"><span class="fn">- Proyectos anidados</span> infinitos</div>
+                  <div class="editor-line"><span class="fn">- Preview en vivo</span> + Toolbar Office</div>
+                  <div class="editor-line"><span class="fn">- MCP Server</span> nativo para IA</div>
+                </div>
+                <div class="preview-rendered">
+                  <h1>Bienvenido a PurpleMD</h1>
+                  <h2>Editor + Preview en vivo</h2>
+                  <p>Escribí <code>Markdown</code> acá, ves el resultado.</p>
+                  <ul>
+                    <li>Proyectos anidados infinitos</li>
+                    <li>Preview en vivo + Toolbar Office</li>
+                    <li>MCP Server nativo para IA</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORES / PRINCIPIOS -->
+    <section class="values section" id="valores" aria-labelledby="values-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="values-title" class="section-title">Tus notas. Tus reglas.</h2>
+          <p class="section-lead">Tres principios innegociables que guían cada decisión de producto.</p>
+        </header>
+        <div class="values-grid grid-3">
+          <article class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h3 class="value-title">Tus notas son tuyas</h3>
+            <p class="value-text">El servidor no las guarda. Viven en tu Drive (appDataFolder) o en tu navegador (localStorage). Sin base de datos propietaria, sin formato cerrado. Te los llevás cuando quieras, donde quieras. Zero lock-in real.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="value-title">Sin telemetría. Nunca.</h3>
+            <p class="value-text">Ni obligatoria ni opcional. El servidor no sabe qué escribís. Tu privacidad no es una opción de configuración, es la arquitectura.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="value-title">Open source real</h3>
+            <p class="value-text">MIT. Sin CLA, sin "source available", sin bait-and-switch. El código es tuyo para usarlo, modificarlo, forkearlo, auditarlo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="features-title" class="section-title">Todo lo que necesitás para escribir</h2>
+          <p class="section-lead">Características pensadas para developers, no para vender licencias.</p>
+        </header>
+        <div class="features-grid grid-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <h3 class="card-title">Proyectos anidados</h3>
+            <p class="card-text">Subcarpetas infinitas. Importá y organizá sin límites.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3 class="card-title">Editor + Preview</h3>
+            <p class="card-text">Escribí y mirá el resultado al instante. Toolbar, atajos, búsqueda.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <h3 class="card-title">Código bonito + PDF</h3>
+            <p class="card-text">Resaltado Dracula. Exportá a PDF o ZIP.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3 class="card-title">MCP Server</h3>
+            <p class="card-text">Conectá Cursor, Claude, Zed. Token por cuenta, sin sesión.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3 class="card-title">Auth opcional</h3>
+            <p class="card-text">Google OAuth o modo invitado local. Sin cuenta requerida.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+            <h3 class="card-title">Importá .md/.zip</h3>
+            <p class="card-text">Selector de archivos. Validación automática, sin zip-bombs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MCP SERVER -->
+    <section class="mcp section" id="mcp" aria-labelledby="mcp-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="mcp-title" class="section-title">MCP Server: PurpleMD en tu IA</h2>
+          <p class="section-lead">Conectá PurpleMD a Claude, Cursor u otro cliente MCP. Token por cuenta, alcance <code>mcp</code>, 90 días. Sin sesión web: el token se valida por cabecera <code>X-PurpleMD-Token</code>.</p>
+        </header>
+        <div class="mcp-config">
+          <h3 class="mcp-config-title">Configuración para Claude / Cursor</h3>
+          <p class="mcp-config-desc">Copiá este JSON en tu configuración MCP (Claude: <code>~/Library/Application Support/Claude/claude_desktop_config.json</code>, Cursor: <code>~/.cursor/mcp.json</code>):</p>
+          <figure class="mcp-code-block">
+            <pre><code><span class="com">{</span>
+  <span class="str">"mcpServers"</span>: {
+    <span class="str">"purplemd"</span>: {
+      <span class="str">"command"</span>: <span class="str">"npx"</span>,
+      <span class="str">"args"</span>: [<span class="str">"-y"</span>, <span class="str">"@modelcontextprotocol/server-http"</span>],
+      <span class="str">"env"</span>: {
+        <span class="str">"X-PurpleMD-Token"</span>: <span class="str">"TU_TOKEN_AQUI"</span>,
+        <span class="str">"MCP_SERVER_URL"</span>: <span class="str">"https://md.purple.com.ar/mcp"</span>
+      }
+    }
+  }
+<span class="com">}</span></code></pre>
+            <button class="copy-btn" data-target="mcp-config" aria-label="Copiar configuración">Copiar</button>
+            <figcaption class="mcp-caption">Reemplazá <code>TU_TOKEN_AQUI</code> por tu token de <a href="https://md.purple.com.ar" target="_blank" rel="noopener noreferrer">md.purple.com.ar → Menú → Servidor MCP</a>. El token dura 90 días; renová cuando quieras desde la app.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta-inner container">
+        <h2 id="cta-title" class="cta-title">Empezá a escribir como querés.</h2>
+        <p class="cta-lead">Sin registro. Sin tarjeta. Abrí el editor y probá en segundos.</p>
+        <div class="cta-actions">
+          <a href="https://md.purple.com.ar" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Probar PurpleMD gratis</a>
+          <a href="https://github.com/ltrecaneo/PurpleMD" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">Ver código en GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Purple - Inicio">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="static/assets/wordmark-oscuro.svg">
+            <img src="static/assets/wordmark.svg" alt="Purple" width="160" height="40">
+          </picture>
+        </a>
+        <p class="footer-text">Purple — Desde el Alto Valle, Patagonia.</p>
+      </div>
+      <nav class="footer-links" aria-label="Enlaces">
+        <a href="https://github.com/ltrecaneo/PurpleMD" target="_blank" rel="noopener noreferrer">PurpleMD</a>
+        <a href="https://github.com/ltrecaneo/PurpleMD/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Licencia MIT</a>
+        <a href="https://github.com/ltrecaneo/PurpleMD/security" target="_blank" rel="noopener noreferrer">Seguridad</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    (function() {
+      // Preview tabs
+      const tabs = document.querySelectorAll('.preview-tab[role="tab"]');
+      const panels = document.querySelectorAll('.preview-panel[role="tabpanel"]');
+      if (tabs.length && panels.length) {
+        function activateTab(tab) {
+          const targetId = tab.getAttribute('aria-controls');
+          const targetPanel = document.getElementById(targetId);
+          if (!targetPanel) return;
+          tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+          panels.forEach(p => { p.classList.remove('active'); p.hidden = true; });
+          tab.classList.add('active'); tab.setAttribute('aria-selected', 'true');
+          targetPanel.classList.add('active'); targetPanel.hidden = false;
+        }
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => activateTab(tab));
+          tab.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateTab(tab); }
+            if (e.key === 'ArrowRight') { e.preventDefault(); const next = tab.nextElementSibling || tabs[0]; if (next.classList.contains('preview-tab')) next.focus(); }
+            if (e.key === 'ArrowLeft') { e.preventDefault(); const prev = tab.previousElementSibling || tabs[tabs.length - 1]; if (prev.classList.contains('preview-tab')) prev.focus(); }
+          });
+        });
+      }
+
+      // Mobile menu toggle
+      const toggle = document.querySelector('[data-nav-toggle]');
+      const menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const open = menu.hidden === false;
+          menu.hidden = open;
+          toggle.setAttribute('aria-expanded', !open);
+        });
+        // Close on link click
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); }));
+        // Close on Escape
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); } });
+      }
+
+      // Copy button for MCP config
+      document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const target = document.getElementById(targetId);
+          if (!target) return;
+          const code = target.querySelector('code');
+          if (!code) return;
+          navigator.clipboard.writeText(code.innerText).then(() => {
+            const original = btn.textContent;
+            btn.textContent = 'Copiado';
+            setTimeout(() => { btn.textContent = original; }, 1500);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
