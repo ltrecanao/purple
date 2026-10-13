@@ -904,9 +904,31 @@ figcaption {
   background: currentColor;
 }
 
-.detalle-cta {
+/* ------------------------------------------------------------ enterprise */
+
+.seccion-enterprise {
+  background: var(--fondo-suave);
+}
+
+.enterprise-caja {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.titulo-seccion-chico {
   color: var(--tinta);
-  font-size: 0.98rem;
+  font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2rem);
+  font-weight: 620;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.enterprise-accion {
+  flex-shrink: 0;
 }
 
 /* --------------------------------------------------------------- principios */
@@ -1029,6 +1051,19 @@ figcaption {
 
   .exportar-cuerpo {
     grid-template-columns: minmax(0, 20rem);
+  }
+
+  .enterprise-caja {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .enterprise-accion {
+    width: 100%;
+  }
+
+  .enterprise-accion .btn {
+    width: 100%;
   }
 
   .footer-inner {
