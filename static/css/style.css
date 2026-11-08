@@ -673,6 +673,10 @@ figcaption {
   line-height: 1.6;
 }
 
+.valor-enlace {
+  margin-top: 0.9rem;
+}
+
 /* --------------------------------------------------------------------- mcp */
 
 .seccion-mcp {
