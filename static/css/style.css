@@ -232,6 +232,7 @@ code {
 
 .encabezado {
   max-width: 42rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .encabezado-compacto {
@@ -657,6 +658,17 @@ figcaption {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;
+}
+
+.valor-tipo {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--violeta);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .valor-titulo {
@@ -1265,4 +1277,115 @@ figcaption {
   body {
     background: #fff;
   }
+}
+
+/* ------------------------------------------------- tags de producto y aviso */
+
+.valor {
+  display: flex;
+  flex-direction: column;
+}
+
+.valor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.valor-tags li {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--violeta-suave);
+  color: var(--violeta-hondo);
+  font-size: 0.78rem;
+  font-weight: 560;
+}
+
+.valor-enlace {
+  margin-top: auto;
+  padding-top: 1.1rem;
+}
+
+.aviso {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--linea-fuerte);
+  border-left: 4px solid #d9a441;
+  border-radius: var(--radio);
+  background: var(--superficie);
+  color: var(--apagado);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.aviso svg {
+  flex: none;
+  margin-top: 0.1rem;
+  color: #b7791f;
+}
+
+.aviso strong {
+  color: var(--tinta);
+  font-weight: 620;
+}
+
+/* ------------------------------------------------------- empresas: qué se ofrece */
+
+.enterprise-ofrece {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 0;
+}
+
+.enterprise-ofrece li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--tinta);
+  font-size: 0.95rem;
+  font-weight: 540;
+}
+
+.enterprise-ofrece svg {
+  flex: none;
+  color: var(--violeta);
+}
+
+/* ------------------------------------------------- desarrollo continuo */
+
+.desarrollo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.desarrollo-icono {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radio);
+  background: var(--violeta-suave);
+  color: var(--violeta);
+}
+
+.desarrollo-texto {
+  max-width: 44rem;
+  margin-top: 0.6rem;
+  color: var(--texto);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.footer-legal p + p {
+  margin-top: 0.35rem;
 }
