@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Purple · Software que trabaja a tu manera</title>
-  <meta name="description" content="Purple: PurpleMD (editor Markdown), PurpleBoard (pizarra colaborativa) y Purple3D (visualizador de paneles de steelframing y drywall). Software libre AGPL-3.0, en el navegador.">
+  <meta name="description" content="Purple: PurpleMD (editor Markdown), PurpleBoard (pizarra colaborativa) y Purple3D (visualizador 3D modular, con módulos de steelframing y drywall). Software libre AGPL-3.0, en el navegador.">
   <meta name="theme-color" content="#6d28d9">
   <link rel="icon" type="image/svg+xml" href="static/assets/purple.svg">
   <link rel="canonical" href="https://purple.com.ar/">
@@ -14,11 +14,11 @@
   <meta property="og:locale" content="es_AR">
   <meta property="og:url" content="https://purple.com.ar/">
   <meta property="og:title" content="Purple · Software que trabaja a tu manera">
-  <meta property="og:description" content="Purple: PurpleMD (editor Markdown), PurpleBoard (pizarra colaborativa) y Purple3D (visualizador de paneles de steelframing y drywall). Software libre AGPL-3.0, en el navegador.">
+  <meta property="og:description" content="Purple: PurpleMD (editor Markdown), PurpleBoard (pizarra colaborativa) y Purple3D (visualizador 3D modular, con módulos de steelframing y drywall). Software libre AGPL-3.0, en el navegador.">
   <meta property="og:image" content="https://purple.com.ar/static/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Purple · Software que trabaja a tu manera">
-  <meta name="twitter:description" content="Purple: PurpleMD (editor Markdown), PurpleBoard (pizarra colaborativa) y Purple3D (visualizador de paneles de steelframing y drywall). Software libre AGPL-3.0, en el navegador.">
+  <meta name="twitter:description" content="Purple: PurpleMD (editor Markdown), PurpleBoard (pizarra colaborativa) y Purple3D (visualizador 3D modular, con módulos de steelframing y drywall). Software libre AGPL-3.0, en el navegador.">
   <meta name="twitter:image" content="https://purple.com.ar/static/assets/og-image.png">
 
   <link rel="preload" href="static/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -176,8 +176,16 @@
           <li class="valor">
             <span class="valor-tipo">Visualizador 3D</span>
             <h3 class="valor-titulo">Purple3D</h3>
-            <p class="valor-texto">Visualizador 3D de paneles de steelframing y drywall. Armado paso a paso, panelizado, control de faltantes y sobrantes y listado de corte exportable. Funciona en el navegador sin instalar nada.</p>
-            <ul class="valor-tags" aria-label="Características de Purple3D"><li>Steelframing</li><li>Drywall</li><li>Listado de corte</li><li>Sin instalar</li></ul>
+            <p class="valor-texto">
+              Visualizador 3D modular que funciona en el navegador sin instalar
+              nada. Cada módulo resuelve un tipo de objeto: armado paso a paso,
+              panelizado, control de faltantes y sobrantes y listado de corte
+              exportable.
+            </p>
+            <ul class="valor-tags" aria-label="Características de Purple3D">
+              <li>Modular</li><li>Paso a paso</li><li>Listado de corte</li><li>Sin instalar</li>
+            </ul>
+
             <a class="enlace-flecha valor-enlace" href="https://3d.purple.com.ar" target="_blank" rel="noopener noreferrer">
               Abrir Purple3D
               <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -187,13 +195,39 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
 
-        <p class="aviso" role="note">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-            <path d="M12 3.5 2.5 20h19L12 3.5z"/>
-            <path d="M12 10v4.5M12 17.2v.1"/>
-          </svg>
-          <span><strong>Purple3D: solo para visualizar.</strong> No reemplaza el plano ni el cálculo estructural.</span>
+    <!-- ================================================ MÓDULOS PURPLE3D -->
+    <section class="seccion seccion-modulos" id="modulos" aria-labelledby="modulos-titulo">
+      <div class="container">
+        <header class="encabezado">
+          <p class="etiqueta">Purple3D</p>
+          <h2 class="titulo-seccion" id="modulos-titulo">Módulos incluidos</h2>
+          <p class="bajada">
+            Cada módulo resuelve un tipo de objeto: armado paso a paso,
+            panelizado, control de faltantes y sobrantes y listado de corte
+            exportable. Hoy Purple3D incluye dos.
+          </p>
+        </header>
+
+        <ul class="modulos-grilla">
+          <li class="modulo">
+            <h3 class="modulo-titulo">Steelframing</h3>
+          </li>
+          <li class="modulo">
+            <h3 class="modulo-titulo">Drywall</h3>
+          </li>
+        </ul>
+
+        <p class="modulos-aviso" role="note">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5 2.5 20h19L12 3.5z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>
+          <span><strong>Solo para visualizar.</strong> Estos módulos no reemplazan el plano ni el cálculo estructural.</span>
+        </p>
+
+        <p class="modulos-mas">
+          Para otros tipos de objeto, el desarrollo de módulos a medida está
+          disponible como servicio. <a class="enlace" href="#empresas">Ver Empresas</a>
         </p>
       </div>
     </section>
@@ -206,21 +240,28 @@
             <p class="etiqueta">Empresas</p>
             <h2 class="titulo-seccion-chico" id="empresas-titulo">¿Necesitás Purple en tu empresa?</h2>
             <p class="bajada enterprise-bajada">
-              Todas las soluciones de Purple (PurpleMD, PurpleBoard y Purple3D)
-              son software libre bajo AGPL-3.0: gratis para uso personal y para
-              quienes cumplan con la licencia. Si la necesitás en tu empresa,
-              te ofrezco lo siguiente. Escribime a
+              Purple se publica bajo la licencia
+              <a class="enlace" href="https://github.com/ltrecanao/purplemd/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">AGPL-3.0<span class="sr-only"> (se abre en una pestaña nueva)</span></a>.
+              Cualquier persona u organización puede usarlo bajo sus
+              términos, sin costo. Quienes necesiten otras condiciones, o
+              acompañamiento para implementarlo, pueden contratar los
+              servicios que se detallan acá. Son complementarios: el código
+              sigue disponible bajo la AGPL-3.0 para todos.
+            </p>
+            <p class="enterprise-contacto">
+              Consultas a
               <a class="enlace" href="mailto:purple.empresas@proton.me?subject=Consulta%20para%20empresas%20-%20Purple">purple.empresas@proton.me</a>.
             </p>
           </div>
           <div class="enterprise-accion">
             <ul class="enterprise-ofrece" aria-label="Qué se ofrece">
-              <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5"/></svg>Licencia comercial</li>
-              <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5"/></svg>Soporte</li>
+              <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5"/></svg>Licencia comercial, alternativa a la AGPL-3.0</li>
+              <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5"/></svg>Soporte técnico</li>
               <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5"/></svg>Integración con tu infraestructura</li>
+              <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5"/></svg>Desarrollos a medida</li>
             </ul>
             <a class="btn btn-enterprise" href="mailto:purple.empresas@proton.me?subject=Consulta%20para%20empresas%20-%20Purple">
-              Escribime
+              Hacer una consulta
             </a>
           </div>
         </div>
@@ -298,7 +339,6 @@
 
     <div class="container footer-legal">
       <p>© 2026 Purple · Software libre (AGPL-3.0) · Desde el Alto Valle, Patagonia.</p>
-      <p>Purple3D: solo para visualizar. No reemplaza el plano ni el cálculo estructural.</p>
     </div>
   </footer>
 
