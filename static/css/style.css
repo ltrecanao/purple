@@ -1405,41 +1405,82 @@ figcaption {
 
 .modulos-grilla {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 3vw, 1.5rem);
-  max-width: 42rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
   list-style: none;
   padding: 0;
 }
 
 .modulo {
-  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.4rem, 2.6vw, 2rem);
   border: 1px solid var(--linea-fuerte);
-  border-radius: var(--radio);
+  border-top: 3px solid var(--violeta);
+  border-radius: var(--radio-grande);
   background: var(--superficie);
 }
 
 .modulo-titulo {
   color: var(--tinta);
-  font-size: 1.05rem;
-  font-weight: 620;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.65rem);
+  font-weight: 640;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
 }
 
 .modulo-texto {
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
   color: var(--apagado);
-  font-size: 0.93rem;
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.modulo-incluye {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: auto;
+  padding: 1.25rem 0 0;
+  list-style: none;
+}
+
+.modulo-texto + .modulo-incluye {
+  margin-top: 1.4rem;
+  border-top: 1px solid var(--linea);
+}
+
+.modulo-incluye li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  color: var(--texto);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.modulo-incluye li::before {
+  content: '';
+  flex: none;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--violeta);
+  transform: translateY(-0.05em);
 }
 
 .seccion-modulos .modulos-aviso {
-  max-width: 42rem;
-  margin-top: 1.25rem;
+  max-width: none;
+  margin-top: 1.75rem;
 }
 
 .seccion-modulos .modulos-mas {
-  max-width: 42rem;
+  max-width: none;
+}
+
+@media (max-width: 900px) {
+  .modulos-grilla {
+    grid-template-columns: 1fr;
+  }
 }
 
 .enterprise-contacto {
@@ -1448,8 +1489,3 @@ figcaption {
   font-size: 0.98rem;
 }
 
-@media (max-width: 600px) {
-  .modulos-grilla {
-    grid-template-columns: 1fr;
-  }
-}
