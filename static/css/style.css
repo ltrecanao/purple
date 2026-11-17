@@ -1489,3 +1489,46 @@ figcaption {
   font-size: 0.98rem;
 }
 
+
+
+/* ------------------------------------------- 4 productos y módulos de pago */
+
+.valores-4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.modulos-subtitulo {
+  margin: 2.25rem 0 1rem;
+  color: var(--tinta);
+  font-size: 1.05rem;
+  font-weight: 640;
+  letter-spacing: -0.01em;
+}
+
+.modulos-subtitulo:first-of-type {
+  margin-top: 0;
+}
+
+.modulo-estado {
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--violeta-suave);
+  color: var(--violeta-hondo);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.modulo-contacto {
+  align-self: flex-start;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .valores-4 {
+    grid-template-columns: 1fr;
+  }
+}

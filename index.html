@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Purple · Software que trabaja a tu manera</title>
-  <meta name="description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa) y Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing). Software libre AGPL-3.0, en el navegador.">
+  <meta name="description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos). Software libre AGPL-3.0, en el navegador.">
   <meta name="theme-color" content="#6d28d9">
   <link rel="icon" type="image/svg+xml" href="static/assets/purple.svg">
   <link rel="canonical" href="https://purple.com.ar/">
@@ -14,11 +14,11 @@
   <meta property="og:locale" content="es_AR">
   <meta property="og:url" content="https://purple.com.ar/">
   <meta property="og:title" content="Purple · Software que trabaja a tu manera">
-  <meta property="og:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa) y Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing). Software libre AGPL-3.0, en el navegador.">
+  <meta property="og:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos). Software libre AGPL-3.0, en el navegador.">
   <meta property="og:image" content="https://purple.com.ar/static/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Purple · Software que trabaja a tu manera">
-  <meta name="twitter:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa) y Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing). Software libre AGPL-3.0, en el navegador.">
+  <meta name="twitter:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos). Software libre AGPL-3.0, en el navegador.">
   <meta name="twitter:image" content="https://purple.com.ar/static/assets/og-image.png">
 
   <link rel="preload" href="static/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -116,9 +116,9 @@
         </h1>
 
         <p class="hero-bajada">
-          Escribir, pensar en equipo y visualizar paneles. Tres herramientas
-          libres, directas y cuidadas, que funcionan en el navegador sin
-          instalar nada.
+          Escribir, pensar en equipo, visualizar paneles y diseñar tableros
+          eléctricos. Cuatro herramientas libres, directas y cuidadas, que
+          funcionan en el navegador sin instalar nada.
         </p>
 
         <div class="hero-ctas">
@@ -137,14 +137,14 @@
       <div class="container">
         <header class="encabezado">
           <p class="etiqueta">Productos</p>
-          <h2 class="titulo-seccion" id="productos-titulo">Escribí, pensá en equipo, visualizá.</h2>
+          <h2 class="titulo-seccion" id="productos-titulo">Escribí, pensá en equipo, visualizá, diseñá.</h2>
           <p class="bajada">
-            Tres herramientas de Purple, cada una para un momento distinto del
+            Cuatro herramientas de Purple, cada una para un momento distinto del
             trabajo. Software libre, en el navegador.
           </p>
         </header>
 
-        <ul class="valores">
+        <ul class="valores valores-4">
           <li class="valor">
             <span class="valor-tipo">Editor Markdown</span>
             <h3 class="valor-titulo">PurpleMD</h3>
@@ -180,14 +180,27 @@
               Visualizador 3D modular que funciona en el navegador sin instalar
               nada. Cada módulo resuelve un tipo de objeto: armado paso a paso,
               panelizado, control de faltantes y sobrantes y listado de corte
-              exportable.
+              exportable. Con módulos libres y módulos de pago.
             </p>
             <ul class="valor-tags" aria-label="Características de Purple3D">
-              <li>Modular</li><li>Paso a paso</li><li>Listado de corte</li><li>Sin instalar</li>
+              <li>Modular</li><li>Paso a paso</li><li>Listado de corte</li><li>Módulos de pago</li>
             </ul>
 
             <a class="enlace-flecha valor-enlace" href="https://3d.purple.com.ar" target="_blank" rel="noopener noreferrer">
               Abrir Purple3D
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/>
+              </svg>
+              <span class="sr-only"> (se abre en una pestaña nueva)</span>
+            </a>
+          </li>
+          <li class="valor">
+            <span class="valor-tipo">Tableros eléctricos</span>
+            <h3 class="valor-titulo">PurpleVolt</h3>
+            <p class="valor-texto">Simulador de tableros eléctricos de vivienda monofásica. Armá el riel DIN con térmica general, diferencial y circuitos, sumá subtableros y elegí la caja a escala real, con verificación de referencia.</p>
+            <ul class="valor-tags" aria-label="Características de PurpleVolt"><li>Riel DIN</li><li>Subtableros</li><li>Cajas a escala</li><li>Sin instalar</li></ul>
+            <a class="enlace-flecha valor-enlace" href="https://github.com/ltrecanao/purplevolt" target="_blank" rel="noopener noreferrer">
+              Ver PurpleVolt
               <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
                 <path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/>
               </svg>
@@ -203,14 +216,16 @@
       <div class="container">
         <header class="encabezado">
           <p class="etiqueta">Purple3D</p>
-          <h2 class="titulo-seccion" id="modulos-titulo">Módulos incluidos</h2>
+          <h2 class="titulo-seccion" id="modulos-titulo">Módulos de Purple3D</h2>
           <p class="bajada">
             Cada módulo resuelve un tipo de objeto: armado paso a paso,
             panelizado, control de faltantes y sobrantes y listado de corte
-            exportable. Hoy Purple3D incluye tres.
+            exportable. Hoy Purple3D tiene tres módulos libres y tres módulos
+            de pago.
           </p>
         </header>
 
+        <h3 class="modulos-subtitulo">Módulos libres</h3>
         <ul class="modulos-grilla">
           <li class="modulo">
             <h3 class="modulo-titulo">Steelframing</h3>
@@ -244,10 +259,46 @@
           </li>
         </ul>
 
+        <h3 class="modulos-subtitulo">Módulos de pago</h3>
+        <ul class="modulos-grilla">
+          <li class="modulo modulo-pago">
+            <span class="modulo-estado">De pago</span>
+            <h3 class="modulo-titulo">Containers</h3>
+            <p class="modulo-texto">Una caja por largo, ancho y alto en steelframing, drywall o woodframing: paredes, vanos portantes o no, piso, techo y listado de corte.</p>
+            <ul class="modulo-incluye">
+              <li>Paredes, piso y techo</li>
+              <li>Vanos portantes o no</li>
+              <li>Listado de corte exportable</li>
+            </ul>
+            <a class="enlace modulo-contacto" href="mailto:purple.empresas@proton.me?subject=M%C3%B3dulo%20Containers%20(de%20pago)%20-%20Purple3D">Consultar cómo contratarlo</a>
+          </li>
+          <li class="modulo modulo-pago">
+            <span class="modulo-estado">De pago</span>
+            <h3 class="modulo-titulo">Gabinetes</h3>
+            <p class="modulo-texto">Estantes y armarios en drywall, independientes o empotrados, con listado de corte.</p>
+            <ul class="modulo-incluye">
+              <li>Independientes o empotrados</li>
+              <li>Estantes y armarios</li>
+              <li>Listado de corte exportable</li>
+            </ul>
+            <a class="enlace modulo-contacto" href="mailto:purple.empresas@proton.me?subject=M%C3%B3dulo%20Gabinetes%20(de%20pago)%20-%20Purple3D">Consultar cómo contratarlo</a>
+          </li>
+          <li class="modulo modulo-pago">
+            <span class="modulo-estado">De pago</span>
+            <h3 class="modulo-titulo">Cielorrasos</h3>
+            <p class="modulo-texto">Cielorrasos de drywall, desmontables y de PVC: estructura, colgantes y placas, con listado de corte.</p>
+            <ul class="modulo-incluye">
+              <li>Drywall, desmontable y PVC</li>
+              <li>Estructura, colgantes y placas</li>
+              <li>Listado de corte exportable</li>
+            </ul>
+            <a class="enlace modulo-contacto" href="mailto:purple.empresas@proton.me?subject=M%C3%B3dulo%20Cielorrasos%20(de%20pago)%20-%20Purple3D">Consultar cómo contratarlo</a>
+          </li>
+        </ul>
+
         <p class="modulos-aviso" role="note">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5 2.5 20h19L12 3.5z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>
           <span><strong>Aviso:</strong> Los módulos y diseños generados son de carácter orientativo. No reemplazan los planos ejecutivos ni el cálculo estructural definitivo.</span>
-        </p>
         </p>
 
         <p class="modulos-mas">
@@ -271,7 +322,9 @@
               términos, sin costo. Quienes necesiten otras condiciones, o
               acompañamiento para implementarlo, pueden contratar los
               servicios que se detallan acá. Son complementarios: el código
-              sigue disponible bajo la AGPL-3.0 para todos.
+              sigue disponible bajo la AGPL-3.0 para todos. Los módulos de pago
+              de Purple3D (Containers, Gabinetes y Cielorrasos) se contratan por
+              separado.
             </p>
             <p class="enterprise-contacto">
               Consultas a
@@ -337,6 +390,7 @@
             <li><a href="https://md.purple.com.ar" target="_blank" rel="noopener noreferrer">PurpleMD</a></li>
             <li><a href="https://plan.purple.com.ar" target="_blank" rel="noopener noreferrer">PurplePlan</a></li>
             <li><a href="https://3d.purple.com.ar" target="_blank" rel="noopener noreferrer">Purple3D</a></li>
+            <li><a href="https://github.com/ltrecanao/purplevolt" target="_blank" rel="noopener noreferrer">PurpleVolt</a></li>
           </ul>
         </div>
 
