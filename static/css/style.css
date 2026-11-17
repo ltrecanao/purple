@@ -1532,3 +1532,13 @@ figcaption {
     grid-template-columns: 1fr;
   }
 }
+
+.modulos-grilla-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .modulos-grilla-2 {
+    grid-template-columns: 1fr;
+  }
+}

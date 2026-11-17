@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Purple · Software que trabaja a tu manera</title>
-  <meta name="description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos). Software libre AGPL-3.0, en el navegador.">
+  <meta name="description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos, con módulo domiciliario y módulo industrial de pago, con motores y PLC). Software libre AGPL-3.0, en el navegador.">
   <meta name="theme-color" content="#6d28d9">
   <link rel="icon" type="image/svg+xml" href="static/assets/purple.svg">
   <link rel="canonical" href="https://purple.com.ar/">
@@ -14,11 +14,11 @@
   <meta property="og:locale" content="es_AR">
   <meta property="og:url" content="https://purple.com.ar/">
   <meta property="og:title" content="Purple · Software que trabaja a tu manera">
-  <meta property="og:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos). Software libre AGPL-3.0, en el navegador.">
+  <meta property="og:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos, con módulo domiciliario y módulo industrial de pago, con motores y PLC). Software libre AGPL-3.0, en el navegador.">
   <meta property="og:image" content="https://purple.com.ar/static/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Purple · Software que trabaja a tu manera">
-  <meta name="twitter:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos). Software libre AGPL-3.0, en el navegador.">
+  <meta name="twitter:description" content="Purple: PurpleMD (editor Markdown), PurplePlan (pizarra colaborativa), Purple3D (visualizador 3D modular, con módulos de steelframing, drywall y woodframing, y módulos de pago de containers, gabinetes y cielorrasos) y PurpleVolt (tableros eléctricos, con módulo domiciliario y módulo industrial de pago, con motores y PLC). Software libre AGPL-3.0, en el navegador.">
   <meta name="twitter:image" content="https://purple.com.ar/static/assets/og-image.png">
 
   <link rel="preload" href="static/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -197,8 +197,8 @@
           <li class="valor">
             <span class="valor-tipo">Tableros eléctricos</span>
             <h3 class="valor-titulo">PurpleVolt</h3>
-            <p class="valor-texto">Simulador de tableros eléctricos de vivienda monofásica. Armá el riel DIN con térmica general, diferencial y circuitos, sumá subtableros y elegí la caja a escala real, con verificación de referencia.</p>
-            <ul class="valor-tags" aria-label="Características de PurpleVolt"><li>Riel DIN</li><li>Subtableros</li><li>Cajas a escala</li><li>Sin instalar</li></ul>
+            <p class="valor-texto">Simulador de tableros eléctricos modular. El módulo Domiciliario arma el riel DIN de una vivienda monofásica, con subtableros y cajas a escala; Industrial, un módulo de pago, suma tableros trifásicos, motores y PLC.</p>
+            <ul class="valor-tags" aria-label="Características de PurpleVolt"><li>Modular</li><li>Riel DIN</li><li>Cajas a escala</li><li>Módulo de pago</li></ul>
             <a class="enlace-flecha valor-enlace" href="https://volt.purple.com.ar" target="_blank" rel="noopener noreferrer">
               Abrir PurpleVolt
               <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -308,6 +308,52 @@
       </div>
     </section>
 
+    <!-- ================================================ MÓDULOS PURPLEVOLT -->
+    <section class="seccion seccion-modulos" id="modulos-volt" aria-labelledby="modulos-volt-titulo">
+      <div class="container">
+        <header class="encabezado">
+          <p class="etiqueta">PurpleVolt</p>
+          <h2 class="titulo-seccion" id="modulos-volt-titulo">Módulos de PurpleVolt</h2>
+          <p class="bajada">
+            Cada módulo resuelve un tipo de instalación. Hoy PurpleVolt tiene
+            un módulo libre, para electricidad domiciliaria, y un módulo de
+            pago, para tableros industriales.
+          </p>
+        </header>
+
+        <ul class="modulos-grilla modulos-grilla-2">
+          <li class="modulo">
+            <h3 class="modulo-titulo">Domiciliario</h3>
+            <p class="modulo-texto">Electricidad domiciliaria: el riel DIN de una vivienda monofásica armado a mano, con verificación de referencia.</p>
+            <ul class="modulo-incluye">
+              <li>Térmica general, diferencial y circuitos</li>
+              <li>Subtableros</li>
+              <li>Cajas a escala</li>
+              <li>Guardado del proyecto en tu dispositivo</li>
+            </ul>
+          </li>
+          <li class="modulo modulo-pago">
+            <span class="modulo-estado">De pago</span>
+            <h3 class="modulo-titulo">Industrial</h3>
+            <p class="modulo-texto">Tableros eléctricos industriales trifásicos, con motores y PLC, dentro del mismo proyecto de PurpleVolt.</p>
+            <ul class="modulo-incluye">
+              <li>Trifásico 380 V</li>
+              <li>Motores: guardamotor, contactor y relé térmico</li>
+              <li>Arranque directo y estrella-triángulo</li>
+              <li>PLC como componente del tablero: alimentación, entradas y salidas</li>
+              <li>Protecciones y cables de referencia</li>
+            </ul>
+            <a class="enlace modulo-contacto" href="mailto:purple.empresas@proton.me?subject=M%C3%B3dulo%20Industrial%20(de%20pago)%20-%20PurpleVolt">Consultar cómo contratarlo</a>
+          </li>
+        </ul>
+
+        <p class="modulos-aviso" role="note">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5 2.5 20h19L12 3.5z"/><path d="M12 10v4.5M12 17.2v.1"/></svg>
+          <span><strong>Aviso:</strong> Los tableros y cálculos de PurpleVolt son de referencia, solo para visualizar. No reemplazan el proyecto ni la verificación de un matriculado.</span>
+        </p>
+      </div>
+    </section>
+
     <!-- ======================================================== EMPRESAS -->
     <section class="seccion seccion-enterprise" id="empresas" aria-labelledby="empresas-titulo">
       <div class="container">
@@ -323,8 +369,8 @@
               acompañamiento para implementarlo, pueden contratar los
               servicios que se detallan acá. Son complementarios: el código
               sigue disponible bajo la AGPL-3.0 para todos. Los módulos de pago
-              de Purple3D (Containers, Gabinetes y Cielorrasos) se contratan por
-              separado.
+              de Purple3D (Containers, Gabinetes y Cielorrasos) y de PurpleVolt
+              (Industrial) se contratan por separado.
             </p>
             <p class="enterprise-contacto">
               Consultas a
@@ -390,7 +436,7 @@
             <li><a href="https://md.purple.com.ar" target="_blank" rel="noopener noreferrer">PurpleMD</a></li>
             <li><a href="https://plan.purple.com.ar" target="_blank" rel="noopener noreferrer">PurplePlan</a></li>
             <li><a href="https://3d.purple.com.ar" target="_blank" rel="noopener noreferrer">Purple3D</a></li>
-            <li><a href="https://github.com/ltrecanao/purplevolt" target="_blank" rel="noopener noreferrer">PurpleVolt</a></li>
+            <li><a href="https://volt.purple.com.ar" target="_blank" rel="noopener noreferrer">PurpleVolt</a></li>
           </ul>
         </div>
 
